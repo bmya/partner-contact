@@ -11,14 +11,14 @@
 {
     'name': 'Partner Identification Numbers',
     'category': 'Customer Relationship Management',
-    'version': '10.0.1.0.1',
+    'version': '10.0.1.0.0',
     'depends': [
         'sales_team',
     ],
     'data': [
-        'views/res_partner_id_category_view.xml',
-        'views/res_partner_id_number_view.xml',
-        'views/res_partner_view.xml',
+#         'views/res_partner_id_category_view.xml',
+#         'views/res_partner_id_number_view.xml',
+#         'views/res_partner_view.xml',
         'security/ir.model.access.csv',
     ],
     'author': 'ChriCar Beteiligungs- und Beratungs- GmbH, '

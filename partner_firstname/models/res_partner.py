@@ -3,11 +3,9 @@
 # © 2014 Agile Business Group (<http://www.agilebg.com>)
 # © 2015 Grupo ESOC (<http://www.grupoesoc.es>)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
-
 import logging
 from odoo import api, fields, models
 from .. import exceptions
-
 
 _logger = logging.getLogger(__name__)
 
@@ -16,8 +14,14 @@ class ResPartner(models.Model):
     """Adds last name and first name; name becomes a stored function field."""
     _inherit = 'res.partner'
 
-    firstname = fields.Char("First name")
-    lastname = fields.Char("Last name")
+    firstname = fields.Char(
+        "First name",
+        index=True,
+    )
+    lastname = fields.Char(
+        "Last name",
+        index=True,
+    )
     name = fields.Char(
         compute="_compute_name",
         inverse="_inverse_name_after_cleaning_whitespace",
@@ -64,13 +68,16 @@ class ResPartner(models.Model):
         """Invert name when getting default values."""
         result = super(ResPartner, self).default_get(fields_list)
 
+        if not result.get('name'):
+            return result
+
         inverted = self._get_inverse_name(
-            self._get_whitespace_cleaned_name(result.get("name", "")),
+            self._get_whitespace_cleaned_name(result["name"]),
             result.get("is_company", False))
 
-        for field in inverted.keys():
-            if field in fields_list:
-                result[field] = inverted.get(field)
+        for field in inverted:
+            if field in fields_list and field not in result:
+                result[field] = inverted[field]
 
         return result
 
@@ -133,11 +140,20 @@ class ResPartner(models.Model):
 
         Removes leading, trailing and duplicated whitespace.
         """
-        if name:
-            name = u" ".join(name.split(None))
-            if comma:
-                name = name.replace(" ,", ",")
-                name = name.replace(", ", ",")
+        try:
+            name = u" ".join(name.split()) if name else name
+        except UnicodeDecodeError:
+            # with users coming from LDAP, name can be a str encoded as utf-8
+            # this happens with ActiveDirectory for instance, and in that case
+            # we get a UnicodeDecodeError during the automatic ASCII -> Unicode
+            # conversion that Python does for us.
+            # In that case we need to manually decode the string to get a
+            # proper unicode string.
+            name = u' '.join(name.decode('utf-8').split()) if name else name
+
+        if comma:
+            name = name.replace(" ,", ",")
+            name = name.replace(", ", ",")
         return name
 
     @api.model

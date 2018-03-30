@@ -3,14 +3,15 @@
 # * partner_identification
 # 
 # Translators:
-# OCA Transbot <transbot@odoo-community.org>, 2016
+# OCA Transbot <transbot@odoo-community.org>, 2017
+# Giuliano Lotta <giuliano.lotta@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-25 01:45+0000\n"
-"PO-Revision-Date: 2017-01-25 01:45+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2016\n"
+"POT-Creation-Date: 2017-11-21 01:49+0000\n"
+"PO-Revision-Date: 2017-11-21 01:49+0000\n"
+"Last-Translator: Giuliano Lotta <giuliano.lotta@gmail.com>, 2017\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: partner_identification
-#: code:addons/partner_identification/models/res_partner_id_category.py:24
+#: code:addons/partner_identification/models/res_partner_id_category.py:23
 #, python-format
 msgid ""
 "\n"
@@ -35,7 +36,7 @@ msgstr ""
 "#  - id_number: browse_record del numero documento da validare"
 
 #. module: partner_identification
-#: code:addons/partner_identification/models/res_partner_id_category.py:72
+#: code:addons/partner_identification/models/res_partner_id_category.py:71
 #, python-format
 msgid "%s is not a valid %s identifier"
 msgstr "%s non è un valido %s identificatore"
@@ -90,7 +91,7 @@ msgid "Display Name"
 msgstr "Nome da visualizzare"
 
 #. module: partner_identification
-#: code:addons/partner_identification/models/res_partner_id_category.py:68
+#: code:addons/partner_identification/models/res_partner_id_category.py:67
 #, python-format
 msgid ""
 "Error when evaluating the id_category validation code::\n"
@@ -119,7 +120,7 @@ msgstr "Scaduto"
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_category_id
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number_id
 msgid "ID"
-msgstr "Documento di identificazione"
+msgstr "ID"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number_name
@@ -143,7 +144,9 @@ msgstr ""
 "Tipo di documento definito in configurazione. Per esempio, Patente di Guida"
 
 #. module: partner_identification
+#: model:ir.model.fields,field_description:partner_identification.field_res_partner_alias_id_numbers
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_numbers
+#: model:ir.model.fields,field_description:partner_identification.field_res_users_id_numbers
 msgid "Identification Numbers"
 msgstr "Numeri di identificazione"
 
@@ -182,7 +185,7 @@ msgstr "Ultimo caricamento il"
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_category_write_date
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number_write_date
 msgid "Last Updated on"
-msgstr "Ultimo aggiornamento il"
+msgstr "Ultimo caricamento di"
 
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_category_name
@@ -265,6 +268,14 @@ msgid ""
 msgstr ""
 "Il luogo dove il documento è stato emesso. Per esempio, la nazione del "
 "passaporto e del visto"
+
+#. module: partner_identification
+#: code:addons/partner_identification/models/res_partner.py:130
+#, python-format
+msgid ""
+"This %s has multiple IDs of this type (%s), so a write via the %s field is "
+"not possible. In order to fix this, please use the IDs tab."
+msgstr ""
 
 #. module: partner_identification
 #: selection:res.partner.id_number,status:0

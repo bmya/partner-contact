@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-17 02:29+0000\n"
-"PO-Revision-Date: 2017-03-17 02:29+0000\n"
+"POT-Creation-Date: 2017-11-21 01:48+0000\n"
+"PO-Revision-Date: 2017-11-21 01:48+0000\n"
 "Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2017\n"
 "Language-Team: Slovenian (https://www.transifex.com/oca/teams/23907/sl/)\n"
 "MIME-Version: 1.0\n"
@@ -19,13 +19,33 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 
 #. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_active
 msgid "Active"
-msgstr "Aktiven"
+msgstr "Aktivno"
 
 #. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_type
 msgid "Address Type"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_affiliate_ids
+msgid "Affiliates"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_phonecall_calendar_attendance_ids
+msgid "Aggregated phonecall schedule"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,help:partner_alias.field_res_partner_alias_phonecall_calendar_attendance_ids
+msgid "Aggregation of all available phonecall schedules."
 msgstr ""
 
 #. module: partner_alias
@@ -43,8 +63,14 @@ msgstr ""
 #: model:ir.actions.act_window,name:partner_alias.res_partner_alias_action
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_alias_ids
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_ids
+#: model:ir.model.fields,field_description:partner_alias.field_res_users_alias_ids
 #: model:ir.ui.view,arch_db:partner_alias.personal_information
 msgid "Aliases"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_phonecall_available
+msgid "Available to call"
 msgstr ""
 
 #. module: partner_alias
@@ -55,6 +81,27 @@ msgstr ""
 #. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_barcode
 msgid "Barcode"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,help:partner_alias.field_res_partner_alias_phonecall_calendar_ids
+msgid "Best schedule when the contact expects to be called."
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_birthdate
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_birthdate_date
+msgid "Birthdate"
+msgstr "Rojstni datum"
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_message_bounce
+msgid "Bounce"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_channel_ids
+msgid "Channels"
 msgstr ""
 
 #. module: partner_alias
@@ -125,8 +172,18 @@ msgid "Complete Address"
 msgstr ""
 
 #. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_contact_type
+msgid "Contact type"
+msgstr "Tip stika"
+
+#. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_child_ids
 msgid "Contacts"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,help:partner_alias.field_res_partner_alias_message_bounce
+msgid "Counter of the number of bounced emails for this contact"
 msgstr ""
 
 #. module: partner_alias
@@ -142,7 +199,7 @@ msgstr "Ustvaril"
 #. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_create_date
 msgid "Created on"
-msgstr "Ustvaril"
+msgstr "Ustvarjeno"
 
 #. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_credit_limit
@@ -152,6 +209,11 @@ msgstr ""
 #. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_date
 msgid "Date"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,help:partner_alias.field_res_partner_alias_message_last_post
+msgid "Date of the last message posted on the record."
 msgstr ""
 
 #. module: partner_alias
@@ -173,6 +235,11 @@ msgid "Email"
 msgstr ""
 
 #. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_notify_email
+msgid "Email Messages and Notifications"
+msgstr ""
+
+#. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_employee
 msgid "Employee"
 msgstr ""
@@ -188,6 +255,21 @@ msgid "First Name"
 msgstr ""
 
 #. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: partner_alias
 #: model:ir.model.fields,help:partner_alias.field_res_partner_alias_email_formatted
 msgid "Format email address \"Name <email@domain>\""
 msgstr ""
@@ -198,6 +280,11 @@ msgid "Formatted Email"
 msgstr ""
 
 #. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_gender
+msgid "Gender"
+msgstr "Spol"
+
+#. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_id
 msgid "ID"
 msgstr "ID"
@@ -205,6 +292,24 @@ msgstr "ID"
 #. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_im_status
 msgid "IM Status"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,help:partner_alias.field_res_partner_alias_message_unread
+msgid "If checked new messages require your attention."
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,help:partner_alias.field_res_partner_alias_message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,help:partner_alias.field_res_partner_alias_opt_out
+msgid ""
+"If opt-out is checked, this contact has refused to receive emails for mass "
+"mailing and marketing campaign. Filter 'Available for Mass Mailing' allows "
+"users to filter the partners when performing mass mailing."
 msgstr ""
 
 #. module: partner_alias
@@ -225,6 +330,11 @@ msgid "Internal Reference"
 msgstr ""
 
 #. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_is_company
 msgid "Is a Company"
 msgstr ""
@@ -240,6 +350,11 @@ msgid "Is a Vendor"
 msgstr ""
 
 #. module: partner_alias
+#: model:ir.model.fields,help:partner_alias.field_res_partner_alias_phonecall_available
+msgid "Is it now a good time to call this partner?"
+msgstr ""
+
+#. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_function
 msgid "Job Position"
 msgstr ""
@@ -247,6 +362,11 @@ msgstr ""
 #. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_lang
 msgid "Language"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_message_last_post
+msgid "Last Message Date"
 msgstr ""
 
 #. module: partner_alias
@@ -270,6 +390,11 @@ msgid "Last name"
 msgstr "Priimek"
 
 #. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_contact_id
+msgid "Main Contact"
+msgstr "Glavni stik"
+
+#. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_image_medium
 msgid "Medium-sized image"
 msgstr ""
@@ -283,6 +408,11 @@ msgid ""
 msgstr ""
 
 #. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_mobile
 msgid "Mobile"
 msgstr ""
@@ -293,9 +423,39 @@ msgid "Name"
 msgstr "Naziv"
 
 #. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_nationality_id
+msgid "Nationality"
+msgstr "Nacionalnost"
+
+#. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_comment
 msgid "Notes"
 msgstr "Zapiski"
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,help:partner_alias.field_res_partner_alias_message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,help:partner_alias.field_res_partner_alias_message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_opt_out
+msgid "Opt-Out"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_other_contact_ids
+msgid "Others Positions"
+msgstr "Drugi položaji"
 
 #. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_parent_name
@@ -321,6 +481,29 @@ msgstr ""
 #. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_phone
 msgid "Phone"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_phone_extension
+msgid "Phone Extension"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,help:partner_alias.field_res_partner_alias_phone_extension
+msgid "Phone Number Extension."
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_phonecall_calendar_ids
+msgid "Phonecall schedule"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,help:partner_alias.field_res_partner_alias_notify_email
+msgid ""
+"Policy to receive emails for new messages pushed to your personal Inbox:\n"
+"- Never: no emails are sent\n"
+"- All Messages: for every notification you receive in your Inbox"
 msgstr ""
 
 #. module: partner_alias
@@ -354,6 +537,31 @@ msgid "Share Partner"
 msgstr ""
 
 #. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_signup_type
+msgid "Signup Token Type"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_signup_valid
+msgid "Signup Token is Valid"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_signup_url
+msgid "Signup URL"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_signup_expiration
+msgid "Signup expiration"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_signup_token
+msgid "Signup token"
+msgstr ""
+
+#. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_image_small
 msgid "Small-sized image"
 msgstr ""
@@ -380,6 +588,16 @@ msgstr ""
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_street3
 msgid "Street 3"
 msgstr "Ulica 3"
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_street_name
+msgid "Street name"
+msgstr "Naziv ulice"
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_street_number
+msgid "Street number"
+msgstr "Hišna številka"
 
 #. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_street2
@@ -439,6 +657,16 @@ msgstr ""
 #. module: partner_alias
 #: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_title
 msgid "Title"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: partner_alias
+#: model:ir.model.fields,field_description:partner_alias.field_res_partner_alias_message_unread_counter
+msgid "Unread Messages Counter"
 msgstr ""
 
 #. module: partner_alias

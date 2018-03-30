@@ -55,6 +55,8 @@ Contributors
 * Alexis de Lattre <alexis.delattre@akretion.com>
 * Lorenzo Battistini <lorenzo.battistini@agilebg.com>
 * Pedro M. Baeza <pedro.baeza@serviciosbaeza.com>
+* Dave Lasley <dave@laslabs.com>
+* Franco Tampieri <franco@tampieri.info>
 
 Icon
 ----

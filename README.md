@@ -21,7 +21,7 @@ Available addons
 addon | version | summary
 --- | --- | ---
 [base_country_state_translatable](base_country_state_translatable/) | 10.0.1.0.0 | Translate Country States
-[base_location](base_location/) | 10.0.1.0.1 | Enhanced zip/npa management system
+[base_location](base_location/) | 10.0.1.0.2 | Enhanced zip/npa management system
 [base_location_geonames_import](base_location_geonames_import/) | 10.0.1.1.1 | Import better zip entries from Geonames
 [base_location_nuts](base_location_nuts/) | 10.0.1.0.0 | NUTS Regions
 [base_partner_merge](base_partner_merge/) | 10.0.1.0.0 | Partner merge wizard without dependency on CRM
@@ -37,6 +37,7 @@ addon | version | summary
 [partner_coc](partner_coc/) | 10.0.1.0.0 | Adds a field 'Chamber Of Commerce Registration Number' to partner
 [partner_company_type](partner_company_type/) | 10.0.1.0.1 | Adds a company type to partner that are companies
 [partner_contact_birthdate](partner_contact_birthdate/) | 10.0.1.1.0 | Contact's birthdate
+[partner_contact_birthplace](partner_contact_birthplace/) | 10.0.1.0.0 | This module allows to define a birthplace for partners.
 [partner_contact_configuration](partner_contact_configuration/) | 10.0.1.0.0 | Adds menu configuration access through the 'contacts' module main menu
 [partner_contact_department](partner_contact_department/) | 10.0.1.0.0 | Assign contacts to departments
 [partner_contact_gender](partner_contact_gender/) | 10.0.1.1.0 | Add gender field to contacts
@@ -50,11 +51,12 @@ addon | version | summary
 [partner_contact_personal_information_page](partner_contact_personal_information_page/) | 10.0.1.0.0 | Add a page to contacts form to put personal information
 [partner_contact_role](partner_contact_role/) | 10.0.1.0.0 | Add roles to partners.
 [partner_contact_weight](partner_contact_weight/) | 10.0.1.0.0 | Provide contact weight
-[partner_create_by_vat](partner_create_by_vat/) | 10.0.1.0.0 | Using VIES webservice, name and address information will be fetched and added to the partner.
+[partner_create_by_vat](partner_create_by_vat/) | 10.0.1.0.1 | Using VIES webservice, name and address information will be fetched and added to the partner.
 [partner_disable_gravatar](partner_disable_gravatar/) | 10.0.1.0.0 | Disable automatic connection to gravatar.com
 [partner_email_check](partner_email_check/) | 10.0.1.0.0 | Validate email address field
 [partner_employee_quantity](partner_employee_quantity/) | 10.0.1.0.0 | Know how many employees a partner has
 [partner_external_map](partner_external_map/) | 10.0.1.0.0 | Add Map and Map Routing buttons on partner form to open GMaps, OSM, Bing and others
+[partner_financial_risk](partner_financial_risk/) | 10.0.1.0.0 | Manage partner risk
 [partner_firstname](partner_firstname/) | 10.0.2.1.1 | Split first name and last name for non company partners
 [partner_helper](partner_helper/) | 10.0.0.1.0 | Add specific helper methods
 [partner_identification](partner_identification/) | 10.0.1.1.1 | Partner Identification Numbers
@@ -63,9 +65,13 @@ addon | version | summary
 [partner_password_reset](partner_password_reset/) | 10.0.1.0.0 | Add Wizard to allow resetting of a Partner's associated user password from within the partner view.
 [partner_phone_extension](partner_phone_extension/) | 10.0.1.0.0 | Partner Phone Number Extension
 [partner_phonecall_schedule](partner_phonecall_schedule/) | 10.0.1.0.0 | Track the time and days your partners expect phone calls
+[partner_risk_insurance](partner_risk_insurance/) | 10.0.1.0.0 | Lets set risk insurance info in the partners
+[partner_sale_risk](partner_sale_risk/) | 10.0.1.0.0 | Manage partner risk in sales orders
 [partner_second_lastname](partner_second_lastname/) | 10.0.1.0.0 | Have split first and second lastnames
 [partner_sector](partner_sector/) | 10.0.1.1.0 | Add partner sectors
+[partner_stock_risk](partner_stock_risk/) | 10.0.1.0.0 | Manage partner risk in stock moves
 [partner_street_number](partner_street_number/) | 10.0.1.0.0 | Introduces separate fields for street name and street number.
+[partner_vat_unique](partner_vat_unique/) | 10.0.1.0.0 | Partner VAT Unique
 
 
 Unported addons

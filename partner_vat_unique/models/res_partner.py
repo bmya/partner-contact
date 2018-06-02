@@ -23,7 +23,7 @@ class ResPartner(models.Model):
                 ('parent_id', '=', False),
                 ('vat', '=', record.vat),
                 ('id', '!=', record.id),
-                ('vat', 'not in', ['CL00000000', 'CL66666666', 'CL55555555']),
+                ('vat', 'not in', ['CL000000000', 'CL666666666', 'CL555555555']),
             ])
             if results:
                 raise ValidationError(_(

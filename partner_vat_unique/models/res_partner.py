@@ -22,7 +22,8 @@ class ResPartner(models.Model):
             results = self.env['res.partner'].search_count([
                 ('parent_id', '=', False),
                 ('vat', '=', record.vat),
-                ('id', '!=', record.id)
+                ('id', '!=', record.id),
+                ('vat', 'not in', ['CL00000000', 'CL66666666', 'CL55555555']),
             ])
             if results:
                 raise ValidationError(_(

@@ -7,7 +7,7 @@
     "version": "11.0.1.0.1",
     "category": "Customer Relationship Management",
     "website": "https://github.com/OCA/partner-contact",
-    "author": "Nicolas JEUDY,Odoo Community Association (OCA),Odoo SA",
+    "author": "Nicolas JEUDY, Odoo Community Association (OCA), Odoo SA",
     "license": "AGPL-3",
     "depends": [
         "base",

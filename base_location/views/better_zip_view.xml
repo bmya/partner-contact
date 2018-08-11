@@ -52,9 +52,9 @@
                 <field name="country_id"/>
                 <group expand="0" string="Group By">
                     <filter string="State" domain="[]"
-                            context="{'group_by':'state_id'}"/>
+                            context="{'group_by': 'state_id'}"/>
                     <filter string="Country" domain="[]"
-                            context="{'group_by':'country_id'}"/>
+                            context="{'group_by': 'country_id'}"/>
                 </group>
             </search>
         </field>

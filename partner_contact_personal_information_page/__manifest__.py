@@ -7,7 +7,7 @@
     "version": "11.0.1.0.0",
     "category": "Customer Relationship Management",
     "website": "https://odoo-community.org/",
-    "author": "Nicolas JEUDY,Odoo Community Association (OCA)",
+    "author": "Nicolas JEUDY, Odoo Community Association (OCA)",
     "contributors": [
         'EL Hadji DEM <elhadji.dem@savoirfairelinux.com>',
         'Jairo Llopis <j.llopis@grupoesoc.es>',

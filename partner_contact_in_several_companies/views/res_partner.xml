@@ -76,7 +76,7 @@
                                     <a t-if="!read_only_mode" type="delete" class="fa fa-times pull-right"/>
                                     <div class="o_kanban_image">
                                         <img t-if="record.image.raw_value" t-att-src="'data:image/png;base64, '+record.image.raw_value"/>
-                                        <t t-if="!record.image.raw_value">
+                                        <t t-if="not record.image.raw_value">
                                             <img t-if="record.is_company.raw_value === true" t-att-src='_s + "/base/static/src/img/company_image.png"'/>
                                             <img t-if="record.is_company.raw_value === false" t-att-src='_s + "/base/static/src/img/avatar.png"'/>
                                         </t>

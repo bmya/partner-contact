@@ -3,13 +3,18 @@
 
 from odoo.tests import common
 from odoo.exceptions import ValidationError
+from .fake_models import ResPartner, setup_test_model, teardown_test_model
 
 
 class TestResPartner(common.SavepointCase):
 
+    at_install = False
+    post_install = True
+
     @classmethod
     def setUpClass(cls):
-        super(TestResPartner, cls).setUpClass()
+        super().setUpClass()
+        setup_test_model(cls.env, ResPartner)
         bad_cat = cls.env['res.partner.id_category'].create({
             'code': 'another_code',
             'name': 'another_name',
@@ -29,6 +34,11 @@ class TestResPartner(common.SavepointCase):
             'category_id': cls.partner_id_category.id,
             'partner_id': cls.partner.id,
         })
+
+    @classmethod
+    def tearDownClass(cls):
+        teardown_test_model(cls.env, ResPartner)
+        super().tearDownClass()
 
     def test_compute_identification(self):
         """ It should set the proper field to the proper ID name. """

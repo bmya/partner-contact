@@ -62,7 +62,7 @@ class ResPartnerIdCategory(models.Model):
                       nocopy=True)
         except Exception as e:
             raise UserError(
-                _('Error when evaluating the id_category validation code: '
+                _('Error when evaluating the id_category validation code:'
                   ':\n %s \n(%s)') % (self.name, e))
         if eval_context.get('failed', False):
             raise ValidationError(

@@ -144,19 +144,19 @@ msgid "Search zip"
 msgstr "Suche Stadt"
 
 #. module: base_location
-#: code:addons/base_location/models/res_partner.py:67
+#: code:addons/base_location/models/res_partner.py:69
 #, python-format
 msgid "The city of partner %s differs from that in location %s"
 msgstr "Die Stadt des Partners %s weicht von der des Standorts %s ab"
 
 #. module: base_location
-#: code:addons/base_location/models/res_partner.py:63
+#: code:addons/base_location/models/res_partner.py:65
 #, python-format
 msgid "The country of the partner %s differs from that in location %s"
 msgstr "Das Land des Partners %s unterscheidet sich vom dem des Standorts %s"
 
 #. module: base_location
-#: code:addons/base_location/models/res_partner.py:59
+#: code:addons/base_location/models/res_partner.py:61
 #, python-format
 msgid "The state of the partner %s differs from that in location %s"
 msgstr ""
@@ -190,6 +190,7 @@ msgstr "PLZ"
 #. module: base_location
 #: model:ir.model.fields,field_description:base_location.field_res_company__zip_id
 #: model:ir.model.fields,field_description:base_location.field_res_partner__zip_id
+#: model:ir.model.fields,field_description:base_location.field_res_users__zip_id
 msgid "ZIP Location"
 msgstr "Standort-PLZ"
 

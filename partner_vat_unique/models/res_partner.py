@@ -11,7 +11,7 @@ class ResPartner(models.Model):
 
     vat = fields.Char(copy=False)
 
-    @api.constrains('vat')
+    @api.constrains('vat', 'main_id_number')
     def _check_vat_unique(self):
         for record in self:
             if record.parent_id or not record.vat:
@@ -21,11 +21,12 @@ class ResPartner(models.Model):
             if test_condition:
                 continue
             results = self.env['res.partner'].search_count([
-                ('parent_id', '=', False),
-                ('vat', '=', record.vat),
-                ('id', '!=', record.id)
+                '|', ('main_id_number', '=', record.main_id_number),
+                ('vat', '=', record.vat), ('main_id_number', 'not in', ['00000000-0', '55555555-5', '66666666-6']),
+                ('id', '!=', record.id),
+                ('parent_id', '=', False)
             ])
             if results:
                 raise ValidationError(_(
                     "The VAT %s already exists in another "
-                    "partner.") % record.vat)
+                    "partner.") % record.main_id_number)

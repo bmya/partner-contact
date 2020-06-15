@@ -21,7 +21,8 @@ class ResPartner(models.Model):
             if test_condition:
                 continue
             results = self.env['res.partner'].search_count([
-                ('|', ('main_id_number', '=', record.main_id_number), ('vat', '=', record.vat)),
+                ('main_id_number', '=', record.main_id_number),
+                ('vat', '=', record.vat),
                 ('main_id_number', 'not in', ['1-9', '00000001-9', '00000000-0', '55555555-5', '66666666-6']),
                 ('id', '!=', record.id),
                 ('parent_id', '=', False)

@@ -20,9 +20,12 @@ class ResPartner(models.Model):
             test_condition = config["test_enable"] and not self.env.context.get(
                 "test_vat"
             )
+            rut= '66666666-6'
+            if record.vat == rut:
+                test_condition =True
             if test_condition:
                 continue
             if record.same_vat_partner_id:
                 raise ValidationError(
                     _("The VAT %s already exists in another partner.") % record.vat
-                )
+                    )

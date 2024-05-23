@@ -20,9 +20,11 @@ class ResPartner(models.Model):
             test_condition = config["test_enable"] and not self.env.context.get(
                 "test_vat"
             )
-            rut= '66666666-6'
-            if record.vat == rut:
-                test_condition =True
+            rut = {'66666666-6', 'xaxx010101000', 'XEXX010101000'}
+            rut_set = set(rut)  # Create a set directly from the dictionary elements
+
+            if record.vat in rut_set:
+                test_condition = True
             if test_condition:
                 continue
             if record.same_vat_partner_id:

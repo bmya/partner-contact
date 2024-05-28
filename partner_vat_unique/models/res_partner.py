@@ -20,7 +20,7 @@ class ResPartner(models.Model):
             test_condition = config["test_enable"] and not self.env.context.get(
                 "test_vat"
             )
-            rut = {'66666666-6', 'xaxx010101000', 'XEXX010101000'}
+            rut = {'66666666-6', 'XAXX010101000', 'XEXX010101000'}
             rut_set = set(rut)  # Create a set directly from the dictionary elements
 
             if record.vat in rut_set:

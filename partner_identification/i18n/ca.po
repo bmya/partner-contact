@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * partner_identification
-# 
+#
 # Translators:
 # OCA Transbot <transbot@odoo-community.org>, 2016
 msgid ""
@@ -9,28 +9,30 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-10 01:50+0000\n"
-"PO-Revision-Date: 2017-06-10 01:50+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2016\n"
+"PO-Revision-Date: 2019-12-03 15:04+0000\n"
+"Last-Translator: georginaf <georgina.fornes@qubiq.es>\n"
 "Language-Team: Catalan (https://www.transifex.com/oca/teams/23907/ca/)\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: ca\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #. module: partner_identification
 #: code:addons/partner_identification/models/res_partner_id_category.py:23
 #, python-format
 msgid ""
 "\n"
-"# Python code. Use failed = True to specify that the id number is not valid.\n"
+"# Python code. Use failed = True to specify that the id number is not "
+"valid.\n"
 "# You can use the following variables :\n"
 "#  - self: browse_record of the current ID Category browse_record\n"
 "#  - id_number: browse_record of ID number to validate"
 msgstr ""
 
 #. module: partner_identification
-#: code:addons/partner_identification/models/res_partner_id_category.py:71
+#: code:addons/partner_identification/models/res_partner_id_category.py:81
 #, python-format
 msgid "%s is not a valid %s identifier"
 msgstr ""
@@ -56,11 +58,21 @@ msgstr ""
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number_category_id
 msgid "Category"
-msgstr ""
+msgstr "Categoria"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_category_code
 msgid "Code"
+msgstr ""
+
+#. module: partner_identification
+#: model:ir.ui.view,arch_db:partner_identification.view_partner_id_category_search
+msgid "Company Type"
+msgstr ""
+
+#. module: partner_identification
+#: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_category_company_type
+msgid "Company type"
 msgstr ""
 
 #. module: partner_identification
@@ -82,7 +94,7 @@ msgid "Display Name"
 msgstr "Veure el nom"
 
 #. module: partner_identification
-#: code:addons/partner_identification/models/res_partner_id_category.py:67
+#: code:addons/partner_identification/models/res_partner_id_category.py:77
 #, python-format
 msgid ""
 "Error when evaluating the id_category validation code::\n"
@@ -100,6 +112,11 @@ msgstr ""
 #. module: partner_identification
 #: selection:res.partner.id_number,status:0
 msgid "Expired"
+msgstr "Caducat"
+
+#. module: partner_identification
+#: model:ir.ui.view,arch_db:partner_identification.view_partner_id_category_search
+msgid "Group By..."
 msgstr ""
 
 #. module: partner_identification
@@ -111,17 +128,17 @@ msgstr "ID"
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number_name
 msgid "ID Number"
-msgstr ""
+msgstr "Número ID"
 
 #. module: partner_identification
 #: model:ir.ui.view,arch_db:partner_identification.view_partner_form
 msgid "ID Numbers"
-msgstr ""
+msgstr "Números ID"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_category_name
 msgid "ID name"
-msgstr ""
+msgstr "Nom ID"
 
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_number_category_id
@@ -133,12 +150,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_numbers
 #: model:ir.model.fields,field_description:partner_identification.field_res_users_id_numbers
 msgid "Identification Numbers"
-msgstr ""
+msgstr "Números d'identificació"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number_partner_issued_id
 msgid "Issued by"
-msgstr ""
+msgstr "Emès per"
 
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_number_date_issued
@@ -150,7 +167,7 @@ msgstr ""
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number_date_issued
 msgid "Issued on"
-msgstr ""
+msgstr "Emès a"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_category___last_update
@@ -182,6 +199,7 @@ msgstr ""
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number_comment
+#: model:ir.ui.view,arch_db:partner_identification.view_partner_form
 #: model:ir.ui.view,arch_db:partner_identification.view_partner_id_numbers_form
 msgid "Notes"
 msgstr ""
@@ -200,6 +218,7 @@ msgstr ""
 
 #. module: partner_identification
 #: model:ir.actions.act_window,name:partner_identification.action_partner_id_numbers_form
+#: model:ir.ui.view,arch_db:partner_identification.view_partner_form
 #: model:ir.ui.view,arch_db:partner_identification.view_partner_id_numbers_form
 #: model:ir.ui.view,arch_db:partner_identification.view_partner_id_numbers_tree
 msgid "Partner ID Numbers"
@@ -207,6 +226,7 @@ msgstr ""
 
 #. module: partner_identification
 #: model:ir.ui.view,arch_db:partner_identification.view_partner_id_category_form
+#: model:ir.ui.view,arch_db:partner_identification.view_partner_id_category_search
 #: model:ir.ui.view,arch_db:partner_identification.view_partner_id_category_tree
 msgid "Partner Identification Categories"
 msgstr ""
@@ -229,7 +249,7 @@ msgstr ""
 #. module: partner_identification
 #: selection:res.partner.id_number,status:0
 msgid "Running"
-msgstr ""
+msgstr "En procés"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number_status
@@ -259,17 +279,17 @@ msgstr ""
 #. module: partner_identification
 #: selection:res.partner.id_number,status:0
 msgid "To Renew"
-msgstr ""
+msgstr "Per a renovar"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number_valid_from
 msgid "Valid from"
-msgstr ""
+msgstr "Vàlid des de"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number_valid_until
 msgid "Valid until"
-msgstr ""
+msgstr "Vàlid fins"
 
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_number_valid_from

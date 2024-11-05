@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * base_location_nuts
-# 
+#
 # Translators:
 # OCA Transbot <transbot@odoo-community.org>, 2017
 msgid ""
@@ -12,11 +12,12 @@ msgstr ""
 "PO-Revision-Date: 2017-11-21 01:48+0000\n"
 "Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2017\n"
 "Language-Team: Slovenian (https://www.transifex.com/oca/teams/23907/sl/)\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: sl\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3);\n"
 
 #. module: base_location_nuts
 #: model:ir.ui.view,arch_db:base_location_nuts.nuts_import_form
@@ -193,6 +194,11 @@ msgid "Name"
 msgstr "Naziv"
 
 #. module: base_location_nuts
+#: model:ir.model.fields,field_description:base_location_nuts.field_res_partner_nuts_not_updatable
+msgid "Not updatable"
+msgstr ""
+
+#. module: base_location_nuts
 #: model:ir.model.fields,field_description:base_location_nuts.field_res_partner_nuts_parent_left
 msgid "Parent Left"
 msgstr "Levo nadrejeni"
@@ -229,12 +235,16 @@ msgstr ""
 
 #. module: base_location_nuts
 #: model:ir.ui.view,arch_db:base_location_nuts.nuts_import_form
+#, fuzzy
 msgid ""
 "This wizard will download the lastest version of\n"
 "                NUTS 2013 from Europe RAMON metadata service.\n"
 "                Updating or creating new NUTS entries if not\n"
 "                found already in the system, and DELETING MISSING\n"
-"                ENTRIES from new downloaded file."
+"                ENTRIES from new downloaded file.\n"
+"\n"
+"                Update or deletion is prevented for NUTS entries with the "
+"flag 'Not updatable'."
 msgstr ""
 "Ta čarovnik bo prenesel zadnjo verzijo\n"
 "                NUTS 2013 iz evropske RAMON metadata storitve.\n"
@@ -258,5 +268,6 @@ msgstr "Uvozite lahko NUTS iz RAMON evropske storitve."
 msgid ""
 "You must click at import wizard to populate NUTS items\n"
 "        in Odoo database in:\n"
-"        Sales &gt; Configuration &gt; Address Book &gt; Localization &gt; Import NUTS 2013"
+"        Sales &gt; Configuration &gt; Address Book &gt; Localization &gt; "
+"Import NUTS 2013"
 msgstr ""

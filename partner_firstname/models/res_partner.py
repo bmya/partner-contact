@@ -46,7 +46,7 @@ class ResPartner(models.Model):
                     vals[key] = value
 
             # Remove the combined fields
-            if "name" in vals:
+            if "name" in vals and not self._context.get('install_mode'):
                 del vals["name"]
             if "default_name" in context:
                 del context["default_name"]
@@ -245,6 +245,22 @@ class ResPartner(models.Model):
         # Force calculations there
         records._inverse_name()
         _logger.info("%d partners updated installing module.", len(records))
+
+    @api.multi
+    def onchange(self, values, field_name, field_onchange):
+        """when one of our name fields is changed, suppress updates to the
+        connected user's (user_ids) name, as this in turn would cause another
+        write on the partner's name, with possible mistakes in parsing the
+        parts"""
+        if field_name in getattr(self._compute_name, '_depends', {}):
+            field_onchange = {
+                field_path: value
+                for field_path, value in field_onchange.iteritems()
+                if field_path != 'user_ids.name'
+            }
+        return super(ResPartner, self).onchange(
+            values, field_name, field_onchange,
+        )
 
     # Disabling SQL constraint givint a more explicit error using a Python
     # contstraint

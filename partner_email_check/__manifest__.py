@@ -4,16 +4,19 @@
 
 {
     'name': 'Email Format Checker',
-    'version': '10.0.1.0.0',
+    'version': '10.0.1.1.1',
     'summary': 'Validate email address field',
     'author': "Komit, Odoo Community Association (OCA)",
     'website': 'http://komit-consulting.com',
     'category': 'Tools',
-    'depends': ['base'],
+    'depends': ['base_setup'],
     'installable': True,
     'application': False,
     'license': 'AGPL-3',
     'external_dependencies': {
-        'python': ['validate_email']
+        'python': ['email_validator']
     },
+    'data': [
+        'views/base_config_view.xml',
+    ]
 }
